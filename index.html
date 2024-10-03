@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Gerador de Senhas Seguras</h1>
+        <div class="mb-3">
+            <input type="text" id="passwordOutput" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="passwordLength" class="form-label">Comprimento da Senha: <span id="lengthValue">12</span></label>
+            <input type="range" class="form-range" id="passwordLength" min="6" max="30" value="12">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="includeUppercase" checked>
+                <label class="form-check-label" for="includeUppercase">Incluir Maiúsculas</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="includeLowercase" checked>
+                <label class="form-check-label" for="includeLowercase">Incluir Minúsculas</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="includeNumbers" checked>
+                <label class="form-check-label" for="includeNumbers">Incluir Números</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="includeSymbols" checked>
+                <label class="form-check-label" for="includeSymbols">Incluir Símbolos</label>
+            </div>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" id="generateBtn">Gerar Senha</button>
+            <button class="btn btn-secondary" id="copyBtn">Copiar Senha</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

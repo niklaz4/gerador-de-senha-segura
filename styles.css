@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Audiowide', sans-serif; 
+    font-size: 36px; 
+    color: #000000;
+    margin-bottom: 20px; 
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.form-range::-webkit-slider-thumb {
+    background: #6c5ce7;
+}
+
+.form-range::-moz-range-thumb {
+    background: #6c5ce7;
+}
+
+.btn-primary {
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+}
+
+.btn-primary:hover {
+    background-color: #5b4cdb;
+    border-color: #5b4cdb;
+}
+
+.btn-secondary {
+    background-color: #a29bfe;
+    border-color: #a29bfe;
+}
+
+.btn-secondary:hover {
+    background-color: #8f87fe;
+    border-color: #8f87fe;
+}
+
+.form-check-input:checked {
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+}
